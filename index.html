@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess The Movie</title>
+	<style>
+		*{
+			margin-left:0px;
+			margin-right:0px;
+		}
+		body{
+	background-image:linear-gradient(rgb(0,0,0,0.6),rgb(0,0,0,0.6)),url('https://i.pinimg.com/originals/be/2a/7a/be2a7a01262b6e5ab091eee86aa87ead.jpg');
+	color:#f6f6f6;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	height:80vh;
+    }
+    h1{
+    	font-size:100px;
+    	border-bottom:5px solid white;
+    	animation-name:fadein;
+    	animation-duration:6s;
+    }
+    @keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+	</style>
+</head>
+<body onload="fun()">
+<h1>Guess The Movie</h1>
+
+</body>
+<script src="js.js"></script>
+</html>

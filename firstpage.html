@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>guess the movie</title>
+	<style>
+		body{
+			
+    	background-image:linear-gradient(rgb(0,0,0,0.2),rgb(0,0,0,0.2)),url('https://i.pinimg.com/originals/4c/ba/93/4cba9388025117cb8c60a4f8610f90f5.gif');
+    	background-size:cover;
+	color:#f6f6f6;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	height:80vh;
+    }
+    .container{
+    	background-color:transparent;
+    	height:60vh;
+    	width:40vw;
+    	border-radius:15px;
+    	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	color:black;
+    }
+    h1{
+
+    	font-size:50px;
+    	border-bottom:5px solid white;
+    }
+    button{
+    	border-radius:15px;
+    	outline:none;
+    	border:none;
+    }
+    button:hover{
+    	opacity:0.5;
+    }
+	</style>
+</head>
+<body>
+	<h1>Choose Your Mode</h1>
+	<div class='container'>
+		<button onclick="location.href='ComputerVsPlayer.html';"><img src=".\player_vs_computer.jpg" width="200"></button><br>
+		<button onclick="location.href='PlayerVsPlayer.html';"><img src=".\player_vs_player.jpg"width="200" height="170"style="border-radius:5px"></button>
+	</div>
+</body>
+</html>
