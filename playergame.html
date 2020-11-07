@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess The Game</title>
+	<link rel="stylesheet" href="playergame_css.css">
+</head>
+<body onload="fun1()">
+ <h1>Lives:- &nbsp;&nbsp;
+  	   <span class="a" id="_1">1</span>
+       <span class="a" id="_2">2</span> 
+       <span class="a" id="_3">3</span > 
+       <span class="a" id="_4">4</span> 
+       <span class="a" id="_5">5</span> 
+       <span class="a" id="_6">6</span> 
+       <span class="a" id="_7">7</span> 
+       <span class="a" id="_8">8</span>
+       <span class="a" id="_9">9</span> 
+    </h1>
+    <table>
+    	<tr>
+    		<td><label style="font-size:25px" id="player1">Player1</label></td>
+    		<td> <button id="play1" class="_turn"  disabled></button></td>
+    		<td><label style="font-size:25px" >&nbsp; &nbsp;&nbsp;&nbsp;<span id="player2">Player2</span></label></td>
+    		<td><button id="play2" class="_turn" disabled></button></td>
+    	</tr>
+    </table>
+    <table id="table2" >
+    	<tr >
+    		<td ><label style="font-size:25px"><span id="tarun">Player1</span> Enter Your Movie Name:-</label></td>
+    		<td > <input type="password" style="width:300px" id="movienameinput" oninput="fun3()";></td>
+    		<td ><button id="moviename" onclick="fun4()">Submit</button></td>
+          <td ><button id="showmovie" onclick="fun5()">Show Movie</button>
+    	</tr>
+    	<tr>
+    		<td><label style="font-size:25px"><span id="om">Player2</span> Enter your Character:-</label></td>
+    		<td> <input type="text" id="characternameinput" style="width:300px" oninput="fun7()"></td>
+    		<td><button onclick="fun8()" id="submitcharacter">Submit</button></td>
+    	</tr>
+    </table>
+    <div><ul id="movie"></ul></div>
+    <div  id="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <button onclick='location.reload()' style="float:right">Close</button>
+    <button onclick="fun9()">Exit</button>
+    
+    <p id="showresult" style="color:black;text-align:center;font-size:40px;font-weight:bold;"></p>
+  </div>
+    <script src="js.js"></script>
+</body>
+</html>
