@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess The Game</title>
+	<link rel="stylesheet" href="computer_css.css">
+</head>
+<body onload="fun1()">
+ <h1>Lives:- &nbsp;&nbsp;
+  	   <span class="a" id="_1">1</span>
+       <span class="a" id="_2">2</span> 
+       <span class="a" id="_3">3</span > 
+       <span class="a" id="_4">4</span> 
+       <span class="a" id="_5">5</span> 
+       <span class="a" id="_6">6</span> 
+       <span class="a" id="_7">7</span> 
+       <span class="a" id="_8">8</span>
+       <span class="a" id="_9">9</span> 
+    </h1>
+    <select  onchange='fun5(value)'id="choice">
+      <option  value="choose" selected>Choose Mode</option>
+      <option   value="mix" >Mix Movies</option>
+      <option   value="hollywood">Hollywood Movies</option>
+      <option   value="bollywood">Bollywood Movies</option>
+    </select><br>
+    <button onclick="fun3()" id="submitchoice">Submit Choice</button>
+    <table id="table2" >
+    	<tr>
+    		<td><label style="font-size:25px"><span id="om">Player</span> Enter your Character:-</label></td>
+    		<td> <input type="text" id="characternameinput" style="width:300px" oninput="fun7()"></td>
+    		<td><button onclick="fun8()" id="submitcharacter">Submit</button></td>
+    	</tr>
+    </table>
+    <div><ul id="movie"></ul></div>
+    <div  id="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <button onclick='location.reload()' style="float:right">Close</button>
+    <button onclick="fun9()">Exit</button>
+    
+    <p id="showresult" style="color:black;text-align:center;font-size:40px;font-weight:bold;"></p>
+  </div>
+    <script src="computerjs.js"></script>
+</body>
+</html>
